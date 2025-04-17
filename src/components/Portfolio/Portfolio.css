@@ -1,0 +1,200 @@
+.portfolio-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0 3rem;
+  }
+  
+  .filter-buttons button {
+    background-color: transparent;
+    border: 1px solid #61dafb;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-buttons button:hover {
+    background-color: rgba(97, 218, 251, 0.1);
+  }
+  
+  .filter-buttons button.active {
+    background-color: #61dafb;
+    color: #121212;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-item {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+  }
+  
+  .project-image {
+    height: 200px;
+    background-color: #2a2a2a;
+    background-size: cover;
+    background-position: center;
+  }
+  
+
+  
+  .project-image.placeholder2 {
+    background: linear-gradient(45deg, #f72585, #1a1a1a);
+  }
+  
+  .project-image.placeholder3 {
+    background: linear-gradient(45deg, #34aa51, #1a1a1a);
+  }
+  
+  .project-image.placeholder4 {
+    background: linear-gradient(45deg, #f7b538, #1a1a1a);
+  }
+
+  .project-image.placeholder5 {
+    background: linear-gradient(45deg, #c92828, #1a1a1a);
+  }
+  
+  .project-details {
+    padding: 1.5rem;
+  }
+  
+  .project-details h3 {
+    margin-bottom: 0.5rem;
+    color: #61dafb;
+  }
+  
+  .project-details p {
+    margin-bottom: 1rem;
+    color: #ccc;
+  }
+  
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tech-tag {
+    background-color: rgba(97, 218, 251, 0.1);
+    color: #61dafb;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .project-links a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+  
+  .view-project {
+    background-color: #61dafb;
+    color: #121212;
+  }
+  
+  .view-code {
+    background-color: transparent;
+    color: #61dafb;
+    border: 1px solid #61dafb;
+  }
+  
+  .project-links a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .filter-buttons {
+      flex-wrap: wrap;
+    }
+  }
+
+  /* Skills Section at the bottom of the Portfolio page */
+.skills-section-full {
+    margin-top: 5rem;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .skills-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .skills-category h3 {
+    color: #61dafb;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .skills-category h3::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #61dafb;
+  }
+  
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .skill-item {
+    background-color: rgba(97, 218, 251, 0.1);
+    color: #61dafb;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    background-color: rgba(97, 218, 251, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .skills-categories {
+      grid-template-columns: 1fr;
+    }
+  }

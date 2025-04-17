@@ -1,0 +1,272 @@
+.about-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 1rem;
+  }
+  
+  .about-flex {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    align-items: flex-start;
+  }
+  
+  .about-text {
+    flex: 3;
+    line-height: 1.8;
+  }
+  
+  .about-text p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-image {
+    flex: 2;
+    max-width: 250px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border: 3px solid #000000;
+  }
+  
+  .intro-text {
+    font-size: 1.5rem;
+    color: #61dafb;
+    font-weight: 500;
+  }
+  
+  .section-subheading {
+    color: #61dafb;
+    margin: 2rem 0 1rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+  }
+  
+  .section-subheading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #61dafb;
+  }
+  
+  .strength-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .strength-card {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    transition: all 0.3s ease;
+  }
+  
+  .strength-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .strength-card h4 {
+    color: #61dafb;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Timeline CSS */
+  .timeline-container {
+    margin: 2rem 0 4rem;
+  }
+  
+  .timeline-content {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .timeline-text {
+    flex: 3;
+  }
+  
+  .timeline {
+    flex: 2;
+    position: relative;
+    padding: 0 20px;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 18px;
+    width: 2px;
+    background-color: #61dafb;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+    padding-left: 45px;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #61dafb;
+    border: 3px solid #121212;
+    z-index: 1;
+  }
+  
+  .timeline-date {
+    font-weight: 600;
+    color: #61dafb;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-content h4 {
+    margin: 0 0 0.5rem;
+    color: #fff;
+  }
+  
+  .timeline-content p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  .inline-link {
+    color: #61dafb;
+    position: relative;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .inline-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #61dafb;
+    transition: width 0.3s ease;
+  }
+  
+  .inline-link:hover::after {
+    width: 100%;
+  }
+  
+  .inline-link:hover {
+    color: #61dafb;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .about-image {
+      order: -1;
+      margin-bottom: 2rem;
+    }
+    
+    .timeline-content {
+      flex-direction: column;
+    }
+    
+    .timeline {
+      margin-top: 2rem;
+    }
+    
+    .strength-cards {
+      flex-direction: column;
+    }
+  }
+
+  /* Add these updated styles to your About.css file */
+
+/* Add or update these styles in your About.css file */
+
+/* Improve overall container */
+.timeline-container {
+    margin: 2rem 0 4rem;
+    width: 100%;
+  }
+  
+  /* Create better spacing in the timeline layout */
+  .timeline-content {
+    display: flex;
+    gap: 4rem; /* Good spacing between text and timeline */
+  }
+  
+  /* Give the text much more room */
+  .timeline-text {
+    flex: 7; /* Much larger ratio - was 4, now 7 */
+    max-width: 75%; /* Increased from 65% to 75% */
+    padding-right: 30px; /* More padding */
+  }
+  
+  /* Make timeline narrower */
+  .timeline {
+    flex: 3; /* Keep at 3 */
+    position: relative;
+    padding: 0 10px 0 30px; /* Reduced horizontal padding */
+    border-left: 1px solid rgba(97, 218, 251, 0.3);
+    margin-left: 20px;
+    max-width: 25%; /* Limit the maximum width */
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 18px;
+    width: 2px;
+    background-color: #61dafb;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 70px;
+    padding-left: 45px;
+  }
+  
+  /* Improve responsive behavior */
+  @media (max-width: 1200px) {
+    .timeline-content {
+      flex-direction: column;
+      gap: 3rem;
+    }
+    
+    .timeline-text {
+      max-width: 100%;
+      padding-right: 0;
+    }
+    
+    .timeline {
+      max-width: 100%;
+      margin-left: 0;
+    }
+  }
