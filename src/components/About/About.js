@@ -98,14 +98,14 @@ const About = () => {
               
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
-                <div className="timeline-date">2019</div>
+                <div className="timeline-date">Present</div>
                 <div className="timeline-content">
-                  <h4>University of Mumbai</h4>
-                  <p>BE in Computer Engineering</p>
-                  <p>Python, SQL, DBMS, Machine Learning</p>
-                  <p>3D Design Intern at The Learning Buddy</p>
+                  <h4>Lead Teaching Assistant for COGS108</h4>
+                  <h4>Graduate student researcher for Gender study</h4>
+                  <h4>Graduating in June 2025</h4>
                 </div>
               </div>
+
               
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
@@ -117,16 +117,19 @@ const About = () => {
                   <p>Data Science Intern at Datamatics Global Services</p>
                 </div>
               </div>
-              
+
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
-                <div className="timeline-date">Present</div>
+                <div className="timeline-date">2019</div>
                 <div className="timeline-content">
-                  <h4>Lead Teaching Assistant for COGS108</h4>
-                  <h4>Graduate student researcher for Gender study</h4>
-                  <h4>Graduating in June 2025</h4>
+                  <h4>University of Mumbai</h4>
+                  <p>BE in Computer Engineering</p>
+                  <p>Python, SQL, DBMS, Machine Learning</p>
+                  <p>3D Design Intern at The Learning Buddy</p>
                 </div>
               </div>
+              
+              
             </motion.div>
           </div>
         </div>
