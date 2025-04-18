@@ -186,10 +186,12 @@
   
   .featured-projects {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2rem;
     margin-top: 3rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 1rem;
   }
   
   .project-card {
