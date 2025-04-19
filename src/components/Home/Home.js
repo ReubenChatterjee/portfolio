@@ -110,9 +110,9 @@ const Home = () => {
       className="project-image"
       style={{ backgroundImage: "url(/images/gender-study.png)", backgroundSize: 'cover', backgroundPosition: 'center' }}
     ></div>
-    <h4>Gender & Group Dynamics Reseacrh Study</h4>
+    <h4>Gender & Group Dynamics Research Study</h4>
     <p>Ongoing research where I am analyzing demographic data from 500+ students to investigate the effects of gender composition on team dynamics in COGS108. I am currently conducting ANOVA tests for balanced experimental groupings across various demographics. Findings include significant gender-based differences in programming comfort.</p>
-    <a href="https://github.com/ReubenChatterjee/student-accommodation-app" target="_blank" rel="noopener noreferrer" className="project-link">View Project</a>
+    <a href="https://github.com/ReubenChatterjee/gender_groupwork" target="_blank" rel="noopener noreferrer" className="project-link">View Project</a>
   </div>
 
           <div className="project-card">
